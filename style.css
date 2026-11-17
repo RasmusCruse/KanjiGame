@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  background-color: #fff0f3;
+}
+html,
+body {
+  min-height: 100%;
+}
+nav {
+  text-align: center;
+  margin-top: 30px;
+}
+nav ul {
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  gap: 5px;
+}
+nav a {
+  background-color: #c9184a;
+  color: #cad2c5;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 8px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+nav a:hover {
+  background-color: #003049;
+  border-radius: 5px;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+h1,
+h2 {
+  color: #c9184a;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-variant: small-caps;
+}
+p {
+  color: #590d22;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+ol {
+  width: fit-content;
+  margin: 20px auto;
+  text-align: left;
+  padding-left: 0%;
+  list-style-position: inside;
+  color: #590d22;
+}
+footer {
+  color: #590d22;
+  text-decoration: none;
+}
+.copyright {
+  width: 100%;
+  margin-bottom: auto;
+  text-align: left;
+  padding: 8px;
+  border: none;
+}
+.answers {
+  display: grid;
+  grid-template-columns: 150px 150px;
+  gap: 15px;
+  justify-content: center;
+}
+.answers button {
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffa5ab;
+}
+.answers button:hover {
+  color: #6d6875;
+}
+.reading {
+  font-size: 18px;
+  margin-top: -20px;
+  color: #590d22;
+}
+.welcome {
+  text-align: center;
+  margin: 0 auto;
+}
+#hint {
+  color: #c0392b;
+  font-size: 18px;
+  font-style: italic;
+  text-align: center;
+  margin-top: 15px;
+}
+#nextButton {
+  display: block;
+  margin: 20px auto;
+  padding: 15px 30px;
+  background-color: #d4144b;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#nextButton[hidden] {
+  display: none;
+}
+
+#nextButton:hover {
+  background-color: #a90f3a;
+}
+/* Mobile devices */
+@media screen and (max-width: 768px) {
+
+  body {
+    margin: 0;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .welcome {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0 10px;
+  }
+
+  .game {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+  }
+
+  .kanji {
+    font-size: 32px;
+    overflow-wrap: anywhere;
+  }
+
+  .reading {
+    font-size: 18px;
+  }
+
+  .answers {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    width: 100%;
+  }
+
+  .answers button {
+    width: 100%;
+    min-width: 0;
+    padding: 15px 8px;
+    font-size: 16px;
+    overflow-wrap: anywhere;
+  }
+
+  #hint,
+  #explanation {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  #score,
+  #lives {
+    font-size: 18px;
+  }
+}

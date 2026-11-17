@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Particle Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="BaseGame.html">Home</a>
+    </nav>
+    <h1>The Particle Game</h1>
+    <p class="welcome">
+      Welcome to the Particle Game!<br />
+      Test your knowledge of Japanese particles with a mix of JLPT N5 and N4
+      questions.<br />
+      Choose the correct particle to complete a Japanese sentence, or identify
+      what a particle does.<br />
+      Each correct answer earns you 100 points. You have 3 lives, and a wrong
+      answer will give you a helpful hint. Good luck! がんばって！
+    </p>
+    <section class="game">
+      <h2 class="kanji">わたし ___ がくせいです。</h2>
+      <p class="reading">I am a student.</p>
+      <p id="question">Which particle is missing?</p>
+      <div class="answers">
+        <button>は</button>
+        <button>を</button>
+        <button>に</button>
+        <button>で</button>
+      </div>
+      <p id="hint"></p>
+      <p id="explanation"></p>
+      <button id="nextButton" hidden>Next Question →</button>
+      <p id="score">Score: 0</p>
+      <p id="lives">Lives: ❤️❤️❤️</p>
+    </section>
+    <script src="particelgame.js"></script>
+  </body>
+</html>
