@@ -128,7 +128,7 @@ const questions = [
     answers: ["を", "で", "の", "が"],
     hint: "This particle connects the owner to the object.",
     explanation:
-      "の (no) indicates possession. だれのかばん means 'whose bag'.",
+    "の (no) indicates possession. だれのかばん means 'whose bag'.",
   },
   {
     type: "fill",
