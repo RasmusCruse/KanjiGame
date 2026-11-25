@@ -24,7 +24,7 @@ nav a {
   display: block;
   width: 220px;
   background-color: #c9184a;
-  color: #cad2c5;
+  color: #590d22;
   text-decoration: none;
   text-align: center;
   padding: 15px;
@@ -158,7 +158,7 @@ nav:not(.game-navigation) ul {
 nav:not(.game-navigation) a {
   display: inline-block;
   background-color: #c9184a;
-  color: #cad2c5;
+  color: #fefae0;
   padding: 10px 20px;
   border-radius: 8px;
   text-decoration: none;
